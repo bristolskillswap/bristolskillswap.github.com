@@ -1,46 +1,92 @@
+{% unless page.title %}
+	{% assign front = 1 %}
+	{% assign page = site.posts.first %}
+{% endunless %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <title>Bristol Skillswap</title>
-    <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <link rel="stylesheet" href="/css/skillstyles.css"/>
-    <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500,700' rel='stylesheet' type='text/css'>
-    <link rel="icon" href="/images/favicon.png" type="image/png" />
+	<meta charset="utf-8" />
+	<title>Bristol Skillswap</title>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link rel="stylesheet" href="/css/skillstyles.css"/>
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500,700' rel='stylesheet' type='text/css'>
+	<link rel="icon" href="/images/favicon.png" type="image/png" />
 </head>
 <body>
-<div id="container">
+	<div id="container">
 
-  <header>
-    <div id="header_content">
-      <h1>{{page.title}}</h1>
-      <h3><a href="http://www.pmstudio.co.uk/" target="_blank">Pervasive Media Studios</a></h3>
-      <h3>{{ post.date | format_date }}</h3>
-    </div>
-  </header>
+		<header>
+			<a href="/" class="home_link"></a>			
+		</header>
 
-  <div id="tickets">
-    <img src="images/eventbrite_logo.png" />  It's free, but please get a ticket at our <a href="http://bristolskillswap.eventbrite.com">Eventbrite page</a>.
-  </div>
+		<div class="content">
 
-	{{content}}
+			<div id="header_content">
+				<h1>{{ page.title }}</h1>
+				<h3>
+					@ <a href="http://www.pmstudio.co.uk/" target="_blank">Pervasive Media Studios</a>
+				</h3>
+				<h3>{{ page.date | date: "%B %d %Y" }}</h3>
+			</div>
 
-  <div id="older">
-    <h2>Previous Swapping of the Skills</h2>
-    <ul>
-    	{% for post in site.posts %}
-      		<li><a href="{{ post.url }}">{{ post.title }}</a> &mdash; {{ post.date | format_date }} </li>
-      	{% endfor %}
-    </ul>
-  </div>
+			<div class="sidebar">
+				{% if front %}
+					<div id="tickets">
+						<img src="/images/eventbrite_logo.png" />
+						It's free, but please get a ticket at our
+						<a href="http://bristolskillswap.eventbrite.com">Eventbrite page</a>.
+					</div>
+				{% endif %}
+				<div id="older">
+					<h2>All The Skillswaps</h2>
+					<ul>
+						{% for post in site.posts %}
+							<li>
+								<a href="{{ post.url }}">{{ post.title }}</a>
+								- {{ post.date | date: "%B %Y" }}
+							</li>
+						{% endfor %}
+					</ul>
+				</div>
+			</div>
 
-  <div id="footer"></div>
+			<div class="info">
+				<div class="description">
+					{{ page.description }}
+				</div>
+				{% for speaker in page.speakers %}
+					<div class="speaker">
+						<img src="/images/{{ speaker.pic }}" alt="{{ speaker.name }}">
+					</div>
+					<div class="profile">
+						<h3>{{ speaker.name }}</h3>
+						<a href="http://twitter.com/{{ speaker.handle }}">{{ speaker.handle }}</a>
+						<br />
+						{{ speaker.about }}
+						<br />
+						<a href="http://{{ speaker.website }}">{{ speaker.website }}</a>
+					</div>
+					<br class="clearfloat" />
+				{% endfor %}
 
-</div>
+				{{content}}	
+			</div>
+
+			<br class="clearfloat" />
+		</div>
+
+		<div id="footer"></div>
+
+	</div>
+	
 	<p id="credit">
-	  15942 Internets of kudos to <a href="http://garybristow.com">Gary Bristow</a> for designing this site
+		15942 Internets of kudos to
+		<a href="http://garybristow.com">Gary Bristow</a>
+		for designing this site
 	</p>
+
 </body>
 </html>
