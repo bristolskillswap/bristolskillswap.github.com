@@ -39,6 +39,12 @@ header {
   height: 443px;
   display: block;
 }
+strong {
+  font-weight: bolder;
+}
+em {
+  font-style: italic;
+}
 .home_link {
   width: 833px;
   height: 254px;
