@@ -14,6 +14,7 @@ task :local => :build do
   sh "jekyll --auto --server"
 end
 
+desc "Create a new post"
 task :new do
   throw "No title given" unless ARGV[1]
   title = ""
