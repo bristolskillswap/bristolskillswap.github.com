@@ -39,6 +39,6 @@ task :new do
     f.puts ""
   end
   
-  `open -a Byword #{path}`
+  `subl #{path}`
   exit
 end
