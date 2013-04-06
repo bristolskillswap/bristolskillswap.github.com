@@ -100,8 +100,9 @@
 					</div>
 					<div class="profile">
 						<h3>{{ speaker.name }}</h3>
-						<a href="http://twitter.com/{{ speaker.handle }}">{{ speaker.handle }}</a>
-						{% if speaker.handle %} | {% endif %}
+						{% if speaker.handle %}
+						<a href="http://twitter.com/{{ speaker.handle }}">@{{ speaker.handle }}</a>
+						 | {% endif %}
 						<a href="http://{{ speaker.website }}">{{ speaker.website }}</a>
 						<br />
 						<em>{{ speaker.about }}</em>
