@@ -19,17 +19,17 @@
 	<div id="container">
 
 		<header>
-			<a href="/" class="home_link"></a>			
+			<a href="/" class="home_link"></a>
 		</header>
 
 		<div class="content">
 
 			<div id="header_content">
 				<h1>{{ page.title }}</h1>
-				<h3>
+				<h2>
 					@ <a href="http://www.pmstudio.co.uk/" target="_blank">Pervasive Media Studios</a>
-				</h3>
-				<h3>{{ page.date | date: "%H:00 %B %d %Y" }}</h3>
+				</h2>
+				<h2>{{ page.date | date: "%H:00, %B %d %Y" }}</h2>
 			</div>
 
 			<div class="sidebar">
@@ -106,7 +106,7 @@
 						<img src="/images/{{ speaker.pic }}" alt="{{ speaker.name }}">
 					</div>
 					<div class="profile">
-						<h3>{{ speaker.name }}</h3>
+						<h2>{{ speaker.name }}</h2>
 						{% if speaker.handle %}
 						<a href="http://twitter.com/{{ speaker.handle }}">@{{ speaker.handle }}</a>
 						 | {% endif %}

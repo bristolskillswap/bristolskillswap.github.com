@@ -45,6 +45,9 @@ strong {
 em {
   font-style: italic;
 }
+ul {
+  margin-left: 2em;
+}
 .home_link {
   width: 833px;
   height: 254px;
@@ -111,15 +114,15 @@ h1 {
 h2 {
   margin: 0;
   padding: 0;
-  font-size: 24px;
+  font-size: 30px;
   color: #666;
   font-weight: 400;
   }
 h3 {
-  margin: 0;
+  margin: 1em 0;
   padding: 0;
   color: #666;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 400;
   }
 h3 a {
