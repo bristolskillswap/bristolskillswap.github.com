@@ -8,4 +8,4 @@ Setup
 
 - Pull down repository
 - Run `jekyll server -w`
-- Access site at http://localhost:4000/
+- Access site at <http://localhost:4000/>
