@@ -72,6 +72,9 @@ ul {
   float: left;
   width: 500px;
 }
+.info img {
+  max-width: 100%;
+}
 .sidebar {
   float: right;
   width: 280px;
@@ -275,7 +278,7 @@ a:hover {
   {
   border:none;
   }
-.clearfloat { 
+.clearfloat {
   clear:both;
   font-size: 1px;
   line-height: 0px;
@@ -345,7 +348,7 @@ a:hover {
   color:#fff;
   line-height:100px;
   text-align:center;
-  background:#000;  
+  background:#000;
 }
 #older{
   margin-bottom: 2em;
