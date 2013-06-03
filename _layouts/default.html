@@ -27,7 +27,7 @@
 			<div id="header_content">
 				<h1>{{ page.title }}</h1>
 				<h2>
-					@ <a href="http://www.pmstudio.co.uk/" target="_blank">Pervasive Media Studios</a>
+					@ {{ page.venue }} <!--<a href="http://www.pmstudio.co.uk/" target="_blank">Pervasive Media Studios</a>-->
 				</h2>
 				<h2>{{ page.date | date: "%H:00, %B %d %Y" }}</h2>
 			</div>
@@ -118,7 +118,7 @@
 					<br class="clearfloat" />
 				{% endfor %}
 
-				{{content}}	
+				{{content}}
 			</div>
 
 			<br class="clearfloat" />
@@ -127,7 +127,7 @@
 		<div id="footer"></div>
 
 	</div>
-	
+
 	<p id="credit">
 		15942 Internets of kudos to
 		<a href="http://garybristow.com">Gary Bristow</a>
