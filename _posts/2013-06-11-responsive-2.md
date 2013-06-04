@@ -47,7 +47,7 @@ speakers:
 
 --
   
-Follow [@_skillswap](https://twitter.com/@_skillswap) for updates.
+[@_skillswap](https://twitter.com/@_skillswap) / [lanyrd.com](http://lanyrd.com/2013/bristol-skillswap-responsive-web-design-2/)
 
 **This event has been kindly sponsored by [Halo Media](http://www.halomedia.co.uk/).**
 
