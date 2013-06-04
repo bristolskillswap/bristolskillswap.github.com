@@ -24,7 +24,7 @@ speakers:
     handle: markedup
     pic: pete.jpg
     about: Interaction Designer and published tech writer.
-    website: gplus.to/pete
+    website: markedup.co.uk
 ---
 
 **Location:** Conference Space, 5th Floor @ [Hamilton House](https://maps.google.co.uk/maps?q=Hamilton+House+Stokes+Croft+Bristol), Stokes Croft
