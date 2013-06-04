@@ -39,7 +39,7 @@ speakers:
 
 7:45pm Pete - *Responsive Design Systems*
 
-8:15pm Katja - *Intro to Responsive Web Development*
+8:15pm Katja - *Tools for Responsive Development*
 
 8:45pm Keir - *From Desktop to Responsive (live coding demo)*
 
