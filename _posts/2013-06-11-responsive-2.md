@@ -29,6 +29,24 @@ speakers:
 
 **Location:** Conference Space, 5th Floor @ [Hamilton House](https://maps.google.co.uk/maps?q=Hamilton+House+Stokes+Croft+Bristol), Stokes Croft
 
+--
+
+**Schedule**
+
+7:00pm Doors open
+
+7:15pm Bonny - *You can't polish a turd: Content, clients and responsive design*
+
+7:45pm Pete - *Responsive Design Systems*
+
+8:15pm Katja - *Intro to Responsive Web Development*
+
+8:45pm Keir - *From Desktop to Responsive (live coding demo)*
+
+9:15pm Q&A panel
+
+--
+  
 Follow [@_skillswap](https://twitter.com/@_skillswap) for updates.
 
 **This event has been kindly sponsored by [Halo Media](http://www.halomedia.co.uk/).**
